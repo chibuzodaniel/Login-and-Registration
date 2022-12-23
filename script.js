@@ -7,8 +7,15 @@ showhidepw.forEach((eyeIcon) => {
     pwFields.forEach((pwFields) => {
       if (pwFields.type === "password") {
         pwFields.type = "text";
+        showhidepw.forEach((icon) => {
+          icon.classList.replace("uil-eye-slash", "uil-eye");
+        });
       } else {
         pwFields.type = "password";
+
+        showhidepw.forEach((icon) => {
+          icon.classList.replace("uil-eye", "uil-eye-slash");
+        });
       }
     });
   });

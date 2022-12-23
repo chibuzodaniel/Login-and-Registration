@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  height: 100vh;
+  height: 150vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,11 +18,18 @@ body {
   max-width: 430px;
   width: 100%;
   background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0.1);
   border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0.1);
 }
+.container .forms {
+  width: 200%;
+  background-color: red;
+}
+
 .container .form {
   padding: 30px;
+  width: 100%;
+  /* background: red; */
 }
 .container .form .title {
   position: relative;
@@ -44,6 +51,7 @@ body {
   height: 50px;
   width: 100%;
   margin-top: 30px;
+  background: yellow;
 }
 .input-field input {
   position: absolute;
@@ -70,16 +78,15 @@ body {
 .input-field input:is(:focus, :valid) ~ i {
   color: #4070f4;
 }
-.input-field i .icon {
-  left: 0%;
+.input-field i.icon {
+  left: 0;
 }
 .input-field i.showhidepw {
-  right: 0%;
+  right: 0;
   cursor: pointer;
   padding: 10px;
 }
 .form .checkbox-text {
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
